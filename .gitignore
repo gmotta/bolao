@@ -1,0 +1,6 @@
+ #Ignore backup files
+*~
+log/*.log
+tmp/*/
+db/*.sqlite3
+
