@@ -1,0 +1,339 @@
+  [4;36;1mSQL (8.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:31:37) [POST]
+  Parameters: {"team"=>{}}
+  [4;35;1mTeam Create (0.6ms)[0m   [0mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES(NULL, '2010-06-16 00:31:37', '2010-06-16 00:31:37')[0m
+Redirected to #<Team:0xb67ee350>
+Completed in 13ms (DB: 74) | 302 Found [http://test.host/teams?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#destroy (for 0.0.0.0 at 2010-06-15 21:31:37) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;36;1mTeam Destroy (0.7ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 953125641[0m
+Redirected to http://test.host/teams
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/teams/953125641]
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#edit (for 0.0.0.0 at 2010-06-15 21:31:37) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 14ms (View: 12, DB: 1) | 200 OK [http://test.host/teams/953125641/edit]
+
+
+Processing TeamsController#index (for 0.0.0.0 at 2010-06-15 21:31:37) [GET]
+  [4;36;1mTeam Load (0.6ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/teams
+Rendering teams/index
+Completed in 12ms (View: 9, DB: 1) | 200 OK [http://test.host/teams]
+
+
+Processing TeamsController#new (for 0.0.0.0 at 2010-06-15 21:31:37) [GET]
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://test.host/teams/new]
+  [4;35;1mTeam Load (0.8ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#show (for 0.0.0.0 at 2010-06-15 21:31:37) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/show
+Completed in 3ms (View: 2, DB: 1) | 200 OK [http://test.host/teams/953125641]
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#update (for 0.0.0.0 at 2010-06-15 21:31:37) [PUT]
+  Parameters: {"id"=>"953125641", "team"=>{}}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Redirected to #<Team:0xb678f0bc>
+Completed in 10ms (DB: 1) | 302 Found [http://test.host/teams/953125641?]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:43:37) [POST]
+  Parameters: {"team"=>{}}
+  [4;35;1mTeam Exists (0.5ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" IS NULL) LIMIT 1[0m
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 23ms (View: 6, DB: 13) | 200 OK [http://test.host/teams?]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#destroy (for 0.0.0.0 at 2010-06-15 21:43:37) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;36;1mTeam Destroy (0.5ms)[0m   [0;1mDELETE FROM "teams" WHERE "id" = 953125641[0m
+Redirected to http://test.host/teams
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/teams/953125641]
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#edit (for 0.0.0.0 at 2010-06-15 21:43:37) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://test.host/teams/953125641/edit]
+
+
+Processing TeamsController#index (for 0.0.0.0 at 2010-06-15 21:43:37) [GET]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" [0m
+Rendering template within layouts/teams
+Rendering teams/index
+Completed in 12ms (View: 11, DB: 0) | 200 OK [http://test.host/teams]
+
+
+Processing TeamsController#new (for 0.0.0.0 at 2010-06-15 21:43:37) [GET]
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/teams/new]
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#show (for 0.0.0.0 at 2010-06-15 21:43:37) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.3ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/teams/953125641]
+  [4;35;1mTeam Load (0.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#update (for 0.0.0.0 at 2010-06-15 21:43:37) [PUT]
+  Parameters: {"id"=>"953125641", "team"=>{}}
+  [4;36;1mTeam Load (1.9ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Exists (0.4ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'MyString' AND "teams".id <> 953125641) LIMIT 1[0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 16ms (View: 7, DB: 2) | 200 OK [http://test.host/teams/953125641?]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:44:27) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;35;1mTeam Exists (0.7ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+  [4;36;1mTeam Create (0.9ms)[0m   [0;1mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('Brazil', '2010-06-16 00:44:27', '2010-06-16 00:44:27')[0m
+Redirected to #<Team:0xb689090c>
+Completed in 15ms (DB: 7) | 302 Found [http://test.host/teams?team%5Bname%5D=Brazil]
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#destroy (for 0.0.0.0 at 2010-06-15 21:44:27) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Destroy (0.2ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 953125641[0m
+Redirected to http://test.host/teams
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/teams/953125641]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#edit (for 0.0.0.0 at 2010-06-15 21:44:27) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 13ms (View: 12, DB: 1) | 200 OK [http://test.host/teams/953125641/edit]
+
+
+Processing TeamsController#index (for 0.0.0.0 at 2010-06-15 21:44:27) [GET]
+  [4;35;1mTeam Load (0.8ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/teams
+Rendering teams/index
+Completed in 13ms (View: 10, DB: 1) | 200 OK [http://test.host/teams]
+
+
+Processing TeamsController#new (for 0.0.0.0 at 2010-06-15 21:44:27) [GET]
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://test.host/teams/new]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#show (for 0.0.0.0 at 2010-06-15 21:44:28) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/teams/953125641]
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#update (for 0.0.0.0 at 2010-06-15 21:44:28) [PUT]
+  Parameters: {"id"=>"953125641", "team"=>{"name"=>"Brazil"}}
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;36;1mTeam Exists (0.1ms)[0m   [0;1mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil' AND "teams".id <> 953125641) LIMIT 1[0m
+  [4;35;1mTeam Update (0.6ms)[0m   [0mUPDATE "teams" SET "updated_at" = '2010-06-16 00:44:28', "name" = 'Brazil' WHERE "id" = 953125641[0m
+Redirected to #<Team:0xb6830214>
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/teams/953125641?team%5Bname%5D=Brazil]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:50:33) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;35;1mTeam Exists (0.3ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+  [4;36;1mTeam Create (0.7ms)[0m   [0;1mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('Brazil', '2010-06-16 00:50:33', '2010-06-16 00:50:33')[0m
+Redirected to #<Team:0xb67b008c>
+Completed in 15ms (DB: 6) | 302 Found [http://test.host/teams?team%5Bname%5D=Brazil]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#destroy (for 0.0.0.0 at 2010-06-15 21:50:33) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Destroy (0.3ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 953125641[0m
+Redirected to http://test.host/teams
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/teams/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (1.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#edit (for 0.0.0.0 at 2010-06-15 21:50:33) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 8ms (View: 6, DB: 2) | 200 OK [http://test.host/teams/953125641/edit]
+
+
+Processing TeamsController#index (for 0.0.0.0 at 2010-06-15 21:50:33) [GET]
+  [4;35;1mTeam Load (0.7ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/teams
+Rendering teams/index
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://test.host/teams]
+
+
+Processing TeamsController#new (for 0.0.0.0 at 2010-06-15 21:50:33) [GET]
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://test.host/teams/new]
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:50:34) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Exists (0.3ms)[0m   [0;1mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+  [4;35;1mTeam Create (0.6ms)[0m   [0mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('Brazil', '2010-06-16 00:50:34', '2010-06-16 00:50:34')[0m
+Redirected to #<Team:0xb675c5b8>
+Completed in 9ms (DB: 1) | 302 Found [http://test.host/teams?team%5Bname%5D=Brazil]
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:50:34) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Exists (0.4ms)[0m   [0;1mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 20ms (View: 5, DB: 0) | 200 OK [http://test.host/teams?team%5Bname%5D=Brazil]
+  [4;35;1mTeam Load (0.9ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#show (for 0.0.0.0 at 2010-06-15 21:50:34) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/teams/953125641]
+  [4;35;1mTeam Load (1.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#update (for 0.0.0.0 at 2010-06-15 21:50:34) [PUT]
+  Parameters: {"id"=>"953125641", "team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Exists (0.2ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil' AND "teams".id <> 953125641) LIMIT 1[0m
+  [4;36;1mTeam Update (0.5ms)[0m   [0;1mUPDATE "teams" SET "updated_at" = '2010-06-16 00:50:34', "name" = 'Brazil' WHERE "id" = 953125641[0m
+Redirected to #<Team:0xb6706aa0>
+Completed in 6ms (DB: 2) | 302 Found [http://test.host/teams/953125641?team%5Bname%5D=Brazil]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:51:49) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;35;1mTeam Exists (0.2ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+  [4;36;1mTeam Create (0.6ms)[0m   [0;1mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('Brazil', '2010-06-16 00:51:49', '2010-06-16 00:51:49')[0m
+Redirected to #<Team:0xb68bbf94>
+Completed in 15ms (DB: 4) | 302 Found [http://test.host/teams?team%5Bname%5D=Brazil]
+  [4;35;1mSQL (0.3ms)[0m   [0mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (0.2ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#destroy (for 0.0.0.0 at 2010-06-15 21:51:49) [DELETE]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Destroy (0.3ms)[0m   [0mDELETE FROM "teams" WHERE "id" = 953125641[0m
+Redirected to http://test.host/teams
+Completed in 3ms (DB: 2) | 302 Found [http://test.host/teams/953125641]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "teams" [0m
+  [4;35;1mTeam Load (0.4ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#edit (for 0.0.0.0 at 2010-06-15 21:51:49) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.4ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/edit
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://test.host/teams/953125641/edit]
+
+
+Processing TeamsController#index (for 0.0.0.0 at 2010-06-15 21:51:49) [GET]
+  [4;35;1mTeam Load (0.6ms)[0m   [0mSELECT * FROM "teams" [0m
+Rendering template within layouts/teams
+Rendering teams/index
+Completed in 12ms (View: 10, DB: 1) | 200 OK [http://test.host/teams]
+
+
+Processing TeamsController#new (for 0.0.0.0 at 2010-06-15 21:51:49) [GET]
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 10ms (View: 3, DB: 0) | 200 OK [http://test.host/teams/new]
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:51:49) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Exists (0.2ms)[0m   [0;1mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+  [4;35;1mTeam Create (0.7ms)[0m   [0mINSERT INTO "teams" ("name", "created_at", "updated_at") VALUES('Brazil', '2010-06-16 00:51:49', '2010-06-16 00:51:49')[0m
+Redirected to #<Team:0xb68684c0>
+Completed in 5ms (DB: 1) | 302 Found [http://test.host/teams?team%5Bname%5D=Brazil]
+
+
+Processing TeamsController#create (for 0.0.0.0 at 2010-06-15 21:51:49) [POST]
+  Parameters: {"team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Exists (0.3ms)[0m   [0;1mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil') LIMIT 1[0m
+Rendering template within layouts/teams
+Rendering teams/new
+Completed in 18ms (View: 11, DB: 0) | 200 OK [http://test.host/teams?team%5Bname%5D=Brazil]
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#show (for 0.0.0.0 at 2010-06-15 21:51:49) [GET]
+  Parameters: {"id"=>"953125641"}
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+Rendering template within layouts/teams
+Rendering teams/show
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://test.host/teams/953125641]
+  [4;35;1mTeam Load (0.5ms)[0m   [0mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+
+
+Processing TeamsController#update (for 0.0.0.0 at 2010-06-15 21:51:49) [PUT]
+  Parameters: {"id"=>"953125641", "team"=>{"name"=>"Brazil"}}
+  [4;36;1mTeam Load (0.5ms)[0m   [0;1mSELECT * FROM "teams" WHERE ("teams"."id" = 953125641) [0m
+  [4;35;1mTeam Exists (0.2ms)[0m   [0mSELECT "teams".id FROM "teams" WHERE ("teams"."name" = 'Brazil' AND "teams".id <> 953125641) LIMIT 1[0m
+  [4;36;1mTeam Update (0.5ms)[0m   [0;1mUPDATE "teams" SET "updated_at" = '2010-06-16 00:51:49', "name" = 'Brazil' WHERE "id" = 953125641[0m
+Redirected to #<Team:0xb683e3a0>
+Completed in 12ms (DB: 2) | 302 Found [http://test.host/teams/953125641?team%5Bname%5D=Brazil]
