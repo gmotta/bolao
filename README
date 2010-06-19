@@ -1,3 +1,17 @@
 Bolão
 COPA 2010
 :)
+
+Just tried to setup everything on my mac, and while running the application I got some issues:
+
+When I tried to install sqlite3 my mac asked for ruby 1.9.1 instead of 1.8.7 (current)
+
+Trying to "workaround" on this, I installed sqlite3-ruby
+
+After this when I tried to access localhost:3000/teams it is giving me one error: 
+NameError in TeamsController#index
+
+uninitialized constant ApplicationController
+RAILS_ROOT: /Users/guilhermemotta/Work/Bolao
+
+Any hints? Ideas? Help?
