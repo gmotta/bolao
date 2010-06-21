@@ -2,6 +2,13 @@ Bolão
 COPA 2010
 :)
 
+Monday, June 21 -------------------------------------------------------------------------------
+Updated the application.rb to aplicattion_controller.rb, everything seems to be working now.
+
+If you guys make any updates or have any issues/questions lets keep track of them on the README file, what you guys think about it?
+
+Sunday, June 20 -------------------------------------------------------------------------------
+[solved]
 Just tried to setup everything on my mac, and while running the application I got some issues:
 
 When I tried to install sqlite3 my mac asked for ruby 1.9.1 instead of 1.8.7 (current)
