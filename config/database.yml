@@ -14,13 +14,13 @@ test:
   database: bolao_test
   pool: 5
   timeout: 5000
-  username: postgres
-  password: postgres
+  username: bolao
+  password: bolao
 
 production:
   adapter: postgresql
   database: bolao_production
   pool: 5
   timeout: 5000
-  username: postgres
-  password: postgres
+  username: bolao
+  password: bolao
