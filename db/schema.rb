@@ -9,7 +9,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100616002834) do
+ActiveRecord::Schema.define(:version => 20100624225316) do
+
+  create_table "matches", :force => true do |t|
+    t.datetime "starting_on"
+    t.string   "location"
+    t.string   "description"
+    t.integer  "away_team_id"
+    t.integer  "home_team_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "home_team"
+    t.integer  "away_team"
+  end
 
   create_table "teams", :force => true do |t|
     t.string   "name"
