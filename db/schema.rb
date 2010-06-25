@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100624225316) do
+ActiveRecord::Schema.define(:version => 20100625144525) do
 
   create_table "matches", :force => true do |t|
     t.datetime "starting_on"
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(:version => 20100624225316) do
     t.integer  "home_team_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "home_team"
-    t.integer  "away_team"
+    t.integer  "home_team_score"
+    t.integer  "away_team_score"
   end
 
   create_table "teams", :force => true do |t|
