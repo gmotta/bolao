@@ -1,0 +1,22 @@
+<h1>Listing matches</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+
+<% for match in @matches %>
+  <tr>
+    <td><%=h match.home_team %></td>
+    <td><%=h match.away_team %></td>
+    <td><%=h match.starting_on %></td>
+    <td><%= link_to 'Show', match %></td>
+    <td><%= link_to 'Edit', edit_match_path(match) %></td>
+    <td><%= link_to 'Destroy', match, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New match', new_match_path %>

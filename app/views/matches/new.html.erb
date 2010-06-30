@@ -1,0 +1,41 @@
+<h1>New match</h1>
+
+<% form_for(@match) do |f| %>
+  <%= f.error_messages %>
+
+	<table>
+		<tr>
+			<td>
+				<%= f.label :home_team_id %>
+			</td>
+			<td>
+			</td>
+			<td>
+				<%= f.label :away_team_id %>
+			</td>
+			<td>
+				<%= f.label :starting_on %>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<%= f.collection_select :home_team_id, Team.all, :id, :name %>
+			</td>
+			<td>
+				X
+			</td>
+			<td>
+				<%= f.collection_select :away_team_id, Team.all, :id, :name %>
+			</td>
+			<td>
+				<%= f.datetime_select :starting_on %>
+			</td>
+		</tr>
+	</table>
+  
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', matches_path %>
